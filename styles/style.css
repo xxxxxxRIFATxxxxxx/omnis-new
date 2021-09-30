@@ -1,4 +1,7 @@
 /* Common CSS */
+body {
+    font-family: Roboto;
+}
 
 /* Header CSS */
 .search-container {
@@ -67,5 +70,50 @@ input[type=text]:focus:focus {
     .performance .card-body {
       text-align: center;
       padding-top: 10px !important;
+    }
+}
+
+/* Footer CSS */
+footer {
+    background-color: #626262;
+    color: #FFFFFF;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer ul li a:hover {
+    color: lightgray;
+}
+
+footer .footer-sub-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 19px;
+}
+
+footer .form-control {
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.fly-btn {
+    background-color: #3CB043;
+}
+
+@media only screen and (max-width: 768px) {
+    footer {
+        text-align: center;
     }
 }
