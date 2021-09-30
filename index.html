@@ -14,8 +14,8 @@
     <link rel="icon" href="" type="image/gif" />
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
@@ -25,9 +25,169 @@
 </head>
 
 <body>
+    <!-- Header -->
+    <header>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Navbar</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled">Disabled</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Search -->
+        <div class="search-container">
+            <ul class="d-flex justify-content-center">
+                <li class="nav-item list-circle-none">
+                    <a class="nav-link p-0" href="#">Raw</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Authentic</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link p-0" href="#">Genuine</a>
+                </li>
+            </ul>
+
+            <div class="search-bar input-group mb-3">
+                <span class="input-group-text bg-white border-0" id="basic-addon1">
+                    <img src="images/search-icon.svg" alt="search icon">
+                </span>
+                <input type="text" class="form-control border-0" placeholder="Username" aria-label="Username"
+                    aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+        <!-- Performance -->
+        <div class="performance">
+            <div class="container py-5">
+                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="d-flex justify-content-center align-items-center h-100">
+                                        <img src="images/cup.svg" class="img-fluid rounded-start" alt="cup">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body m-0 p-0">
+                                        <h5 class="card-title">High Quality</h5>
+                                        <p class="card-text">we value quality over quantity
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="d-flex justify-content-center align-items-center h-100">
+                                        <img src="images/mark.svg" class="img-fluid rounded-start" alt="mark">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body m-0 p-0">
+                                        <h5 class="card-title">Convenience</h5>
+                                        <p class="card-text">Sneaker Bids in one place
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="d-flex justify-content-center align-items-center h-100">
+                                        <img src="images/gift.svg" class="img-fluid rounded-start" alt="cup">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body m-0 p-0">
+                                        <h5 class="card-title">Hassle Free</h5>
+                                        <p class="card-text">Quick, easy and reliable
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
+                            <div class="row g-0">
+                                <div class="col-md-4">
+                                    <div class="d-flex justify-content-center align-items-center h-100">
+                                        <img src="images/customer.svg" class="img-fluid rounded-start" alt="customer">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="card-body m-0 p-0">
+                                        <h5 class="card-title">24 / 7 Support</h5>
+                                        <p class="card-text">Easy communication
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
     <!-- External Script -->
