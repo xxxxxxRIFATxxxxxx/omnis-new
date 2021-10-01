@@ -3,6 +3,12 @@ body {
     font-family: Roboto;
 }
 
+.black-btn {
+    background-color: #3A3A3A;
+    border: 3px solid #313131;
+    border-radius: 10px;
+}
+
 /* Header CSS */
 .search-container {
     background-color: #313131;
@@ -111,6 +117,30 @@ input[type=text]:focus:focus {
     .live-bids-sub-title {
         font-size: 14px;
     }
+}
+
+/* Most Popular CSS */
+.most-popular-bg {
+    background-color: #313131;
+}
+
+/* New Releases CSS */
+.underline-container {
+    color: #3A3A3A;
+    font-weight: 500;
+    font-size: 25px;
+}
+
+/* Popular Brands CSS */
+.popular-brands .card-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #313131;
+}
+
+.popular-brands .image-shadow {
+    filter: drop-shadow(1px 2px 10px rgba(0, 0, 0, 0.1));
 }
 
 /* Footer CSS */
