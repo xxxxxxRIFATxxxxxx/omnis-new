@@ -73,6 +73,46 @@ input[type=text]:focus:focus {
     }
 }
 
+/* Live Bids CSS */
+.live-bids {
+    background-color: #E5E5E5;
+}
+
+.live-bids .card-title {
+    color: #3A3A3A;
+    font-size: 25px;
+}
+
+.live-bids .card-text {
+    font-size: 17px;
+    color: #3A3A3A;
+}
+
+.live-bids-title {
+    font-weight: 500;
+    font-size: 40px;
+    color: #313131;
+}
+
+.live-bids-sub-title {
+    font-size: 16px;
+    color: #3A3A3A;
+}
+
+.live-bids a {
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) { 
+    .live-bids-title {
+        font-size: 24px;
+    }
+
+    .live-bids-sub-title {
+        font-size: 14px;
+    }
+}
+
 /* Footer CSS */
 footer {
     background-color: #626262;
