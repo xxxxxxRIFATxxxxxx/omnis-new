@@ -54,17 +54,20 @@ input[type=text]:focus:focus {
   }
   
   .carousel-cell {
-    width: 80%;
-    margin-right: -500px !important;
+    width: 33.33%;
   }
 
   .flickity-page-dots {
       background-color: #313131;
-      padding: 0 20px 40px 20px;
+      padding: 0 20px 30px 20px;
   }
 
   .flickity-page-dots .dot {
       background: #3CB043;
+  }
+
+  .flickity-prev-next-button {
+      display: none;
   }
 
 /* Main CSS */
