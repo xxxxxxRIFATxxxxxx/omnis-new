@@ -10,6 +10,83 @@ body {
 }
 
 /* Header CSS */
+
+/* Navbar CSS */
+.navbar {
+    background-color: #313131;
+    box-shadow: 0px 3px 4px rgba(249, 207, 105, 0.1);
+}
+
+.nav-text {
+    font-weight: normal;
+    font-size: 12px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 4px;
+    margin-bottom: 0;
+}
+
+.nav-btn {
+    background: #E65B5B;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8364px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 96px;
+}
+
+.nav-btn-green {
+    background: #3CB043;
+    border-radius: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14.8364px;
+    text-align: center;
+    color: #FFFFFF;
+    width: 96px;
+}
+
+.nav-btn:hover {
+    background: #f04747;
+}
+
+.nav-btn-green:hover {
+    background: #2bad34;
+}
+
+.top-m {
+    margin-top: 12px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 768px) { 
+    .nav-link div {
+        text-align: left !important;
+    }
+
+    .nav-link p {
+        text-align: left !important;
+    }
+
+    .nav-item {
+        margin-top: 20px;
+    }
+
+    .nav-myacc {
+        margin-top: -28px;
+    }
+
+    .nav-logo, .nav-menu-btn, .nav-btn, .nav-btn-green {
+        display: none;
+    }
+}
+
+/* Search Bar CSS */
 .search-container {
     background-color: #313131;
     padding: 10px;
