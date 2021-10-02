@@ -1,0 +1,67 @@
+a {
+    text-decoration: none;
+}
+
+.black-icon {
+    display: none;
+}
+
+.side-bar {
+    background-color: #313131;
+    color: #FFFFFF;
+}
+
+.side-bar-title {
+    font-weight: 500;
+    font-size: 30px;
+    color: #FFFFFF;
+}
+
+.side-item-title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    color: #FFFFFF;
+}
+
+.side-item-title-2 {
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 14px;
+    color: #E5E5E5;
+}
+
+/* For Hover Effect */
+.side-item:hover {
+    background-color: #FBFBFB;
+}
+
+.side-item:hover .side-item-title-1, .side-item:hover .side-item-title-2 {
+    color: #313131 !important;
+}
+
+.side-item:hover .black-icon {
+    display: block;
+}
+
+.side-item:hover .white-icon {
+    display: none;
+}
+
+/* For Active Class */
+.side-item-active {
+    background-color: #FBFBFB !important;
+    width: 100% !important;
+}
+
+.side-item-active .side-item-title-1, .side-item-active .side-item-title-2 {
+    color: #313131 !important;
+}
+
+.side-item-active .black-icon {
+    display: block;
+}
+
+.side-item-active .white-icon {
+    display: none;
+}
