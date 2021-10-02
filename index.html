@@ -17,6 +17,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 
+    <!-- Flickty CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/e422e8ad98.js" crossorigin="anonymous"></script>
 
@@ -93,12 +96,28 @@
                     aria-describedby="basic-addon1">
             </div>
         </div>
+
+        <!-- Carousel -->
+        <div class="carousel" data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": true }'>
+            <div class="carousel-cell">
+                <img class="img-fluid" src="images/carousel-1.svg" alt="carousel">
+            </div>
+            <div class="carousel-cell">
+                <img class="img-fluid" src="images/carousel-2.svg" alt="carousel">
+            </div>
+            <div class="carousel-cell">
+                <img class="img-fluid" src="images/carousel-3.svg" alt="carousel">
+            </div>
+            <div class="carousel-cell">
+                <img class="img-fluid" src="images/carousel-1.svg" alt="carousel">
+            </div>
+        </div>
     </header>
 
     <!-- Main -->
     <main>
         <!-- Performance -->
-        <div class="performance">
+        <div class="performance pt-4">
             <div class="container py-5">
                 <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <!-- Card -->
@@ -520,6 +539,47 @@
                 </div>
             </div>
         </div>
+
+        <!-- Live IG Feed -->
+        <div class="live-bids">
+            <div class="container">
+                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
+                    <h2 class="live-bids-title">Live IG Feed</h2>
+
+                    <a href="#">
+                        <div class="d-flex justify-content-center align-items-center">
+                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
+                            <div class="mb-2 ms-2">
+                                <img src="images/right-arrow.svg" alt="right-arrow">
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5">
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card h-100 bg-transparent border-0 p-1">
+                            <img src="images/live-1.svg" class="card-img-top" alt="live">
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card h-100 bg-transparent border-0 p-1">
+                            <img src="images/live-2.svg" class="card-img-top" alt="live">
+                        </div>
+                    </div>
+
+                    <!-- Card -->
+                    <div class="col">
+                        <div class="card h-100 bg-transparent border-0 p-1">
+                            <img src="images/live-3.svg" class="card-img-top" alt="live">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -628,6 +688,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
+
+    <!-- Flickty JS -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- External Script -->
     <script src="scripts/script.js"></script>
