@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/security.css">
+    <link rel="stylesheet" href="styles/selling.css">
 </head>
 
 <body>
@@ -154,7 +155,7 @@
                         <!-- Side Item Security -->
                         <div class="mb-2">
                             <a href="security.html">
-                                <div class="px-4 d-flex align-items-center side-item side-item-active">
+                                <div class="px-4 d-flex align-items-center side-item">
                                     <div class="me-4">
                                         <img src="images/lock-white.svg" class="white-icon" alt="lock">
                                         <img src="images/lock-black.svg" class="black-icon" alt="lock">
@@ -187,7 +188,7 @@
                         <!-- Side Item Selling -->
                         <div class="mb-2">
                             <a href="selling.html">
-                                <div class="px-4 d-flex align-items-center side-item">
+                                <div class="px-4 d-flex align-items-center side-item side-item-active">
                                     <div class="me-4">
                                         <img src="images/selling-white.svg" class="white-icon" alt="selling">
                                         <img src="images/selling-black.svg" class="black-icon" alt="selling">
@@ -287,83 +288,56 @@
             <!-- Content -->
             <div class="col-12 col-sm-12 col-md-9 light-bg">
                 <div class="content-container p-4 my-4 mx-3">
-                    <!-- Profile Title -->
-                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
-                        <h2>Security</h2>
-                    </div>
+                    <div
+                        class="d-flex flex-column flex-sm-column flex-md-row justify-content-between align-items-center">
+                        <!-- Tab bar -->
+                        <div class="tab-bar-container">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" href="#">Current</a>
+                                </li>
 
-                    <!-- Information -->
-                    <div class="information py-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div
-                                class="d-flex flex-column flex-sm-column flex-md-row justify-content-start align-items-center">
-                                <img class="img-fluid me-3" src="images/mobile.svg" alt="mobile">
-                                <h4 class="security-title-1">2-Step Verification</h4>
-                            </div>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Pending</a>
+                                </li>
 
-                            <div
-                                class="d-flex flex-column flex-sm-column flex-md-row justify-content-start align-items-center">
-                                <p class="enroll-text pt-3">Enable Now</p>
-                                <button class="btn switch-active">
-                                    <img class="switch-image" src="images/switch.svg" alt="switch">
-                                </button>
-                            </div>
+                                <li class="nav-item">
+                                    <a class="nav-link">History</a>
+                                </li>
+                            </ul>
                         </div>
 
-                        <p class="silver-text pt-3">
-                            With 2-Step Verification (also known as two-factor authentication), you add an extra layer
-                            of security to your
-                            account
-                        </p>
-                    </div>
-
-                    <!-- Information -->
-                    <div class="py-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <img class="img-fluid me-3" src="images/faq.svg" alt="faq">
-                            <h4 class="security-title-1">FAQ</h4>
+                        <div class="star-box px-3 d-flex justify-content-start align-items-center">
+                            <img class="img-fluid me-2" src="images/green-star.svg" alt="star">
+                            <p class="mt-3">Gold Seller</p>
                         </div>
-
-                        <h4 class="question pt-4">What is two-step verification?</h4>
-
-                        <p class="silver-text pt-3">
-                            Two-Factor Authentication (2FA) works by adding an additional layer of security to your
-                            online accounts. It
-                            requires an additional login credential – beyond just the username and password – to gain
-                            account access
-                        </p>
                     </div>
 
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">Why should I enable two-step verification?</h4>
-
-                        <p class="silver-text pt-3">
-                            2FA is an extra step added to the log-in process such as a code sent to your phone. It helps
-                            us verify your
-                            identity and prevent any unauthorised logins. We value your security and we know the hassle
-                            of having to
-                            remember passwords.
-                        </p>
+                    <!-- Search Bar -->
+                    <div class="search-bar input-group mb-3 pt-4 mx-0">
+                        <span class="input-group-text bg-white border-start" id="basic-addon1">
+                            <img src="images/search-icon.svg" alt="search icon">
+                        </span>
+                        <input type="text" class="form-control border-start-0" placeholder="Search name"
+                            aria-describedby="basic-addon1">
                     </div>
 
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">What do I need to set up two-step verification?</h4>
+                    <!-- Table -->
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Ask Price</th>
+                                <th scope="col">Highest Bid</th>
+                                <th scope="col">Lowest Ask</th>
+                                <th scope="col">Expires</th>
+                                <th scope="col">Search Volume</th>
+                            </tr>
+                        </thead>
 
-                        <p class="silver-text pt-3">
-                            All you need is a mobile phone that can receive SMS messages to enable two-step verification
-                        </p>
-                    </div>
-
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">How do I set up two-step verification?</h4>
-
-                        <p class="silver-text pt-3">
-                            <img class="img-fluid" src="images/step-verification.svg" alt="step verification">
-                        </p>
-                    </div>
+                        <tbody>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
