@@ -40,6 +40,10 @@
     color: #313131;
 }
 
+.form-select {
+    width: 90px;
+}
+
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 20px;
