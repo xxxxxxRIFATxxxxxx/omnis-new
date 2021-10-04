@@ -12,3 +12,4 @@ document.querySelector(".switch-active").addEventListener("click", () => {
         image.src = "../images/switch.svg";
     };
 });
+
