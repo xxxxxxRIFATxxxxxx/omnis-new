@@ -208,6 +208,38 @@ input[type=text]:focus:focus {
     text-decoration: none;
 }
 
+/* Offcanvas CSS */
+.offcanvas-outline-btn {
+    background: #FFFFFF;
+    border: 2px solid #313131;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #313131;
+}
+
+.offcanvas-outline-btn:hover {
+    border: 2px solid #838383;
+    color: #838383;
+}
+
+.offcanvas-btn:hover {
+    background: #585858;
+    color: white !important;
+}
+
+.offcanvas-btn {
+    background: #313131;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
 @media only screen and (max-width: 768px) { 
     .live-bids-title {
         font-size: 24px;
