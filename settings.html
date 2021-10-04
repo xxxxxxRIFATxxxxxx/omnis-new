@@ -26,9 +26,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/profile.css">
-    <link rel="stylesheet" href="styles/security.css">
-    <link rel="stylesheet" href="styles/selling.css">
-    <link rel="stylesheet" href="styles/buying.css">
+    <link rel="stylesheet" href="styles/settings.css">
 </head>
 
 <body>
@@ -172,7 +170,7 @@
                         <!-- Side Item Buying -->
                         <div class="mb-2">
                             <a href="buying.html">
-                                <div class="px-4 d-flex align-items-center side-item side-item-active">
+                                <div class="px-4 d-flex align-items-center side-item">
                                     <div class="me-4">
                                         <img src="images/buy-white.svg" class="white-icon" alt="buy">
                                         <img src="images/buy-black.svg" class="black-icon" alt="buy">
@@ -255,7 +253,7 @@
                         <!-- Side Item Settings -->
                         <div class="mb-2">
                             <a href="settings.html">
-                                <div class="px-4 d-flex align-items-center side-item">
+                                <div class="px-4 d-flex align-items-center side-item side-item-active">
                                     <div class="me-4">
                                         <img src="images/settings-white.svg" class="white-icon" alt="settings">
                                         <img src="images/settings-black.svg" class="black-icon" alt="settings">
@@ -289,60 +287,93 @@
             <!-- Content -->
             <div class="col-12 col-sm-12 col-md-9 light-bg">
                 <div class="content-container p-4 my-4 mx-3">
-                    <div
-                        class="d-flex flex-column flex-sm-column flex-md-row justify-content-between align-items-center">
-                        <!-- Tab bar -->
-                        <div class="tab-bar-container">
-                            <ul class="nav nav-tabs">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#">Current</a>
-                                </li>
+                    <!-- Title -->
+                    <h2 class="title pb-4">Account settings</h2>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Pending</a>
-                                </li>
-
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">
-                                        History <span class="badge bg-danger rounded-circle">1</span>
-                                    </a>
-                                </li>
-                            </ul>
+                    <!-- Buying Info -->
+                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid me-3" src="images/buying.svg" alt="buying">
+                            <h2 class="title-1 mt-2">Buying Info</h2>
                         </div>
 
-                        <div class="px-3 d-flex justify-content-start align-items-center">
-                            <div class="d-flex justify-content-center align-items-center me-5">
-                                <img class="img-fluid me-2" src="images/dollar.svg" alt="dollar">
-                                <p class="right-text mt-3">Value <span class="inside-text ms-2">A$543</span></p>
-                            </div>
-
+                        <a href="#">
                             <div class="d-flex justify-content-center align-items-center">
-                                <img class="img-fluid me-2" src="images/box.svg" alt="box">
-                                <p class="right-text mt-3">Quantity <span class="inside-text ms-2">3</span></p>
+                                <div class="mb-3 me-2">
+                                    <img src="images/edit-icon.svg" alt="edit">
+                                </div>
+                                <p class="pt-1">Edit</p>
                             </div>
+                        </a>
+                    </div>
+
+                    <!-- Shipping Info -->
+                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid me-3" src="images/shopping-info.svg" alt="shopping">
+                            <h2 class="title-1 mt-2">Shipping Info</h2>
                         </div>
+
+                        <a href="#">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="mb-3 me-2">
+                                    <img src="images/edit-icon.svg" alt="edit">
+                                </div>
+                                <p class="pt-1">Edit</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <!-- Search Bar -->
-                    <div class="search-bar input-group mb-3 pt-4 mx-0">
-                        <span class="input-group-text bg-white border-start" id="basic-addon1">
-                            <img src="images/search-icon.svg" alt="search icon">
-                        </span>
-                        <input type="text" class="form-control border-start-0" placeholder="Search name"
-                            aria-describedby="basic-addon1">
+                    <!-- Seller Info -->
+                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid me-3" src="images/seller-info.svg" alt="seller">
+                            <h2 class="title-1 mt-2">Seller Info</h2>
+                        </div>
+
+                        <a href="#">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="mb-3 me-2">
+                                    <img src="images/edit-icon.svg" alt="edit">
+                                </div>
+                                <p class="pt-1">Edit</p>
+                            </div>
+                        </a>
                     </div>
 
-                    <!-- Table -->
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">No Results</th>
-                            </tr>
-                        </thead>
+                    <!-- Payout Info -->
+                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid me-3" src="images/payout-info.svg" alt="payout">
+                            <h2 class="title-1 mt-2">Payout Info</h2>
+                        </div>
 
-                        <tbody>
-                        </tbody>
-                    </table>
+                        <a href="#">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="mb-3 me-2">
+                                    <img src="images/edit-icon.svg" alt="edit">
+                                </div>
+                                <p class="pt-1">Edit</p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <!-- Notification Info -->
+                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
+                        <div class="d-flex align-items-center">
+                            <img class="img-fluid me-3" src="images/notification-info.svg" alt="Notification">
+                            <h2 class="title-1 mt-2">Notification</h2>
+                        </div>
+
+                        <a href="#">
+                            <div class="d-flex justify-content-center align-items-center">
+                                <div class="mb-3 me-2">
+                                    <img src="images/edit-icon.svg" alt="edit">
+                                </div>
+                                <p class="pt-1">Edit</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -459,7 +490,7 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- External Script -->
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

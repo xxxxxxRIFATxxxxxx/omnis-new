@@ -1,0 +1,13 @@
+.title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: #313131;
+}
+
+.title-1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px !important;
+    color: #313131;
+}
