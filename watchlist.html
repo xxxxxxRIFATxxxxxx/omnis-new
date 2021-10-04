@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="styles/profile.css">
     <link rel="stylesheet" href="styles/security.css">
     <link rel="stylesheet" href="styles/selling.css">
+    <link rel="stylesheet" href="styles/watch-list.css">
 </head>
 
 <body>
@@ -188,7 +189,7 @@
                         <!-- Side Item Selling -->
                         <div class="mb-2">
                             <a href="selling.html">
-                                <div class="px-4 d-flex align-items-center side-item side-item-active">
+                                <div class="px-4 d-flex align-items-center side-item">
                                     <div class="me-4">
                                         <img src="images/selling-white.svg" class="white-icon" alt="selling">
                                         <img src="images/selling-black.svg" class="black-icon" alt="selling">
@@ -238,7 +239,7 @@
                         <!-- Side Item Watchlist -->
                         <div class="mb-2">
                             <a href="watchlist.html">
-                                <div class="px-4 d-flex align-items-center side-item">
+                                <div class="px-4 d-flex align-items-center side-item side-item-active">
                                     <div class="me-4">
                                         <img src="images/shoe-nav-white.svg" class="white-icon" alt="shoe-nav">
                                         <img src="images/shoe-nav-black.svg" class="black-icon" alt="shoe-nav">
@@ -307,35 +308,47 @@
                             </ul>
                         </div>
 
-                        <div class="star-box px-3 d-flex justify-content-start align-items-center">
-                            <img class="img-fluid me-2" src="images/green-star.svg" alt="star">
-                            <p class="mt-3">Gold Seller</p>
+                        <div class="px-3 d-flex justify-content-start align-items-center">
+                            <img class="img-fluid me-2" src="images/watchlist.svg" alt="watchlist">
+                            <p class="mt-3">Add Product</p>
                         </div>
-                    </div>
-
-                    <!-- Search Bar -->
-                    <div class="search-bar input-group mb-3 pt-4 mx-0">
-                        <span class="input-group-text bg-white border-start" id="basic-addon1">
-                            <img src="images/search-icon.svg" alt="search icon">
-                        </span>
-                        <input type="text" class="form-control border-start-0" placeholder="Search name"
-                            aria-describedby="basic-addon1">
                     </div>
 
                     <!-- Table -->
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">Item</th>
-                                <th scope="col">Ask Price</th>
-                                <th scope="col">Highest Bid</th>
+                                <th scope="col" class="hide">Item</th>
+                                <th scope="col">Market Value</th>
                                 <th scope="col">Lowest Ask</th>
-                                <th scope="col">Expires</th>
-                                <th scope="col">Search Volume</th>
+                                <th scope="col">Last sale</th>
+                                <th scope="col">Gain/Loss(24hrs)</th>
+                                <th class="hide"></th>
                             </tr>
                         </thead>
 
                         <tbody>
+                            <tr>
+                                <td class="hide">
+                                    <div
+                                        class="d-flex flex-row flex-sm-column flex-md-row  justify-content-start align-items-center">
+                                        <img class="img-fluid" src="images/table-shoe.svg" alt="shoe">
+
+                                        <div class="ms-3">
+                                            <p class="table-title-1 mb-2">Zordan 1 Retro High</p>
+                                            <p class="table-title-2 mb-2">Pollen</p>
+                                            <p class="table-title-3">AUS M Mens Size: 9.5</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>A$253</td>
+                                <td>A$256</td>
+                                <td>A$226</td>
+                                <td class="text-success">A$20</td>
+                                <td class="hide">
+                                    <img class="img-fluid" src="images/delete.svg" alt="delete">
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
                 </div>
