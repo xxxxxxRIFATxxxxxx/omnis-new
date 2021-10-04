@@ -26,7 +26,8 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/profile.css">
-    <link rel="stylesheet" href="styles/security.css">
+    <link rel="stylesheet" href="styles/settings.css">
+    <link rel="stylesheet" href="styles/portfolio.css">
 </head>
 
 <body>
@@ -154,7 +155,7 @@
                         <!-- Side Item Security -->
                         <div class="mb-2">
                             <a href="security.html">
-                                <div class="px-4 d-flex align-items-center side-item side-item-active">
+                                <div class="px-4 d-flex align-items-center side-item">
                                     <div class="me-4">
                                         <img src="images/lock-white.svg" class="white-icon" alt="lock">
                                         <img src="images/lock-black.svg" class="black-icon" alt="lock">
@@ -253,7 +254,7 @@
                         <!-- Side Item Settings -->
                         <div class="mb-2">
                             <a href="settings.html">
-                                <div class="px-4 d-flex align-items-center side-item">
+                                <div class="px-4 d-flex align-items-center side-item side-item-active">
                                     <div class="me-4">
                                         <img src="images/settings-white.svg" class="white-icon" alt="settings">
                                         <img src="images/settings-black.svg" class="black-icon" alt="settings">
@@ -287,83 +288,156 @@
             <!-- Content -->
             <div class="col-12 col-sm-12 col-md-9 light-bg">
                 <div class="content-container p-4 my-4 mx-3">
-                    <!-- Profile Title -->
-                    <div class="profile-title-container d-flex d-flex justify-content-between align-items-center">
-                        <h2>Security</h2>
-                    </div>
-
-                    <!-- Information -->
-                    <div class="information py-4">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div
-                                class="d-flex flex-column flex-sm-column flex-md-row justify-content-start align-items-center">
-                                <img class="img-fluid me-3" src="images/mobile.svg" alt="mobile">
-                                <h4 class="security-title-1">2-Step Verification</h4>
+                    <!-- Buying Info -->
+                    <div class="pb-3">
+                        <div class="profile-title-container d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <h2 class="title-1 mt-2">Your Portfolio</h2>
                             </div>
 
-                            <div
-                                class="d-flex flex-column flex-sm-column flex-md-row justify-content-start align-items-center">
-                                <p class="enroll-text pt-3">Enable Now</p>
-                                <button class="btn switch-active">
-                                    <img class="switch-image" src="images/switch.svg" alt="switch">
-                                </button>
-                            </div>
+                            <a href="#">
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <div class="mb-3 me-2">
+                                        <img class="img-fluid" src="images/product-box.svg" alt="product">
+                                    </div>
+                                    <p class="pt-1 edit-text">Add Product</p>
+                                </div>
+                            </a>
                         </div>
-
-                        <p class="silver-text pt-3">
-                            With 2-Step Verification (also known as two-factor authentication), you add an extra layer
-                            of security to your
-                            account
-                        </p>
                     </div>
 
-                    <!-- Information -->
-                    <div class="py-4">
-                        <div class="d-flex justify-content-start align-items-center">
-                            <img class="img-fluid me-3" src="images/faq.svg" alt="faq">
-                            <h4 class="security-title-1">FAQ</h4>
-                        </div>
-
-                        <h4 class="question pt-4">What is two-step verification?</h4>
-
-                        <p class="silver-text pt-3">
-                            Two-Factor Authentication (2FA) works by adding an additional layer of security to your
-                            online accounts. It
-                            requires an additional login credential – beyond just the username and password – to gain
-                            account access
-                        </p>
+                    <!-- Chart -->
+                    <div class="pt-5 pb-3">
+                        <img class="img-fluid" src="images/chart.svg" alt="chart">
                     </div>
 
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">Why should I enable two-step verification?</h4>
+                    <!-- Summary Table -->
+                    <h2 class="title-1 mt-2 pt-5 pb-3">Totals Summery</h2>
+                    <table class="table">
+                        <thead class="border-table">
+                            <tr>
+                                <th scope="col">Item</th>
+                                <th scope="col">Market value</th>
+                                <th scope="col">Gain/Loss(24hrs)</th>
+                                <th scope="col">Average Price</th>
+                            </tr>
+                        </thead>
 
-                        <p class="silver-text pt-3">
-                            2FA is an extra step added to the log-in process such as a code sent to your phone. It helps
-                            us verify your
-                            identity and prevent any unauthorised logins. We value your security and we know the hassle
-                            of having to
-                            remember passwords.
-                        </p>
-                    </div>
+                        <tbody>
+                            <tr>
+                                <td>4</td>
+                                <td>A$234</td>
+                                <td class="text-success">A$234</td>
+                                <td>A$234</td>
+                            </tr>
+                        </tbody>
+                    </table>
 
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">What do I need to set up two-step verification?</h4>
+                    <!-- Item List Table -->
+                    <h2 class="title-1 mt-2 pt-5 pb-3">Item List</h2>
+                    <!-- Table -->
+                    <table class="table text-center">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="hide">Item</th>
+                                <th scope="col">Purchase Date</th>
+                                <th scope="col">Purchase Price</th>
+                                <th scope="col">Market value</th>
+                                <th scope="col">Gain/Loss(24hrs)</th>
+                                <th class="hide"></th>
+                            </tr>
+                        </thead>
 
-                        <p class="silver-text pt-3">
-                            All you need is a mobile phone that can receive SMS messages to enable two-step verification
-                        </p>
-                    </div>
+                        <tbody>
+                            <tr>
+                                <td class="hide">
+                                    <div
+                                        class="d-flex flex-row flex-sm-column flex-md-row  justify-content-start align-items-center">
+                                        <img class="img-fluid" src="images/table-shoe.svg" alt="shoe">
 
-                    <!-- Information -->
-                    <div class="py-2">
-                        <h4 class="question">How do I set up two-step verification?</h4>
+                                        <div class="ms-3">
+                                            <p class="table-title-1 mb-2">Zordan 1 Retro High</p>
+                                            <p class="table-title-2 mb-2 text-dark">Adidas</p>
+                                            <p class="table-title-3">AUS M Mens Size: 9.5</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-dark">07 Jul, 2021</td>
+                                <td class="text-dark">A$256</td>
+                                <td class="text-dark">A$226</td>
+                                <td class="text-success">A$20</td>
+                                <td class="hide">
+                                    <img class="img-fluid" src="images/delete.svg" alt="delete">
+                                </td>
+                            </tr>
 
-                        <p class="silver-text pt-3">
-                            <img class="img-fluid" src="images/step-verification.svg" alt="step verification">
-                        </p>
-                    </div>
+                            <tr>
+                                <td class="hide">
+                                    <div
+                                        class="d-flex flex-row flex-sm-column flex-md-row  justify-content-start align-items-center">
+                                        <img class="img-fluid" src="images/table-shoe-2.svg" alt="shoe">
+
+                                        <div class="ms-3">
+                                            <p class="table-title-1 mb-2">Rertro 1 Retro High</p>
+                                            <p class="table-title-2 mb-2 text-dark">Puma</p>
+                                            <p class="table-title-3">AUS M Mens Size: 9.5</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-dark">07 Jul, 2021</td>
+                                <td class="text-dark">A$256</td>
+                                <td class="text-dark">A$226</td>
+                                <td class="text-success">A$20</td>
+                                <td class="hide">
+                                    <img class="img-fluid" src="images/delete.svg" alt="delete">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="hide">
+                                    <div
+                                        class="d-flex flex-row flex-sm-column flex-md-row  justify-content-start align-items-center">
+                                        <img class="img-fluid" src="images/table-shoe-3.svg" alt="shoe">
+
+                                        <div class="ms-3">
+                                            <p class="table-title-1 mb-2">Mallas 1 Retro High</p>
+                                            <p class="table-title-2 mb-2 text-dark">Vans</p>
+                                            <p class="table-title-3">AUS M Mens Size: 9.5</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-dark">07 Jul, 2021</td>
+                                <td class="text-dark">A$256</td>
+                                <td class="text-dark">A$226</td>
+                                <td class="text-success">A$20</td>
+                                <td class="hide">
+                                    <img class="img-fluid" src="images/delete.svg" alt="delete">
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td class="hide">
+                                    <div
+                                        class="d-flex flex-row flex-sm-column flex-md-row  justify-content-start align-items-center">
+                                        <img class="img-fluid" src="images/table-shoe-4.svg" alt="shoe">
+
+                                        <div class="ms-3">
+                                            <p class="table-title-1 mb-2">Cxiao 1 Retro High</p>
+                                            <p class="table-title-2 mb-2 text-dark">Adidas</p>
+                                            <p class="table-title-3">AUS M Mens Size: 9.5</p>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td class="text-dark">07 Jul, 2021</td>
+                                <td class="text-dark">A$256</td>
+                                <td class="text-dark">A$226</td>
+                                <td class="text-success">A$20</td>
+                                <td class="hide">
+                                    <img class="img-fluid" src="images/delete.svg" alt="delete">
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
         </div>
@@ -480,7 +554,8 @@
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
     <!-- External Script -->
-    <script src="scripts/scripts.js"></script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/settings.js"></script>
 </body>
 
 </html>
