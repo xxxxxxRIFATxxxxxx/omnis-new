@@ -25,6 +25,8 @@
 
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/profile.css">
+    <link rel="stylesheet" href="styles/browse.css">
 </head>
 
 <body>
@@ -283,8 +285,8 @@
         </div>
 
         <!-- Search -->
-        <div class="search-container">
-            <ul class="d-flex justify-content-center">
+        <div class="search-container less-margin">
+            <ul class="d-flex justify-content-center less-margin">
                 <li class="nav-item list-circle-none">
                     <a class="nav-link p-0" href="#">Raw</a>
                 </li>
@@ -295,494 +297,313 @@
                     <a class="nav-link p-0" href="#">Genuine</a>
                 </li>
             </ul>
-
-            <div class="search-bar input-group mb-3">
-                <span class="input-group-text bg-white border-0" id="basic-addon1">
-                    <img src="images/search-icon.svg" alt="search icon">
-                </span>
-                <input type="text" class="form-control border-0" placeholder="Search for brand, color etc"
-                    aria-describedby="basic-addon1">
-            </div>
         </div>
 
-        <!-- Carousel -->
-        <div class="carousel pb-5" data-flickity='{ "freeScroll": true, "wrapAround": true, "autoPlay": true }'>
-            <div class="carousel-cell me-3">
-                <img class="img-fluid w-100" src="images/carousel-1.svg" alt="carousel">
-            </div>
-            <div class="carousel-cell me-3">
-                <img class="img-fluid w-100" src="images/carousel-3.svg" alt="carousel">
-            </div>
-            <div class="carousel-cell me-3">
-                <img class="img-fluid w-100" src="images/carousel-1.svg" alt="carousel">
-            </div>
-            <div class="carousel-cell me-3">
-                <img class="img-fluid w-100" src="images/carousel-2.svg" alt="carousel">
-            </div>
+        <!-- Banner Image -->
+        <div>
+            <img class="img-fluid" src="images/banner-1.svg" alt="banner">
         </div>
     </header>
 
     <!-- Main -->
     <main>
-        <!-- Performance -->
-        <div class="performance pt-4">
-            <div class="container py-5">
-                <div class="row row-cols-1 row-cols-sm-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <img src="images/cup.svg" class="img-fluid rounded-start" alt="cup">
-                                    </div>
-                                </div>
-                                <div class="col-md-8">
-                                    <div class="card-body m-0 p-0">
-                                        <h5 class="card-title">High Quality</h5>
-                                        <p class="card-text">we value quality over quantity
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="row">
+            <!-- Side Bar -->
+            <div class="side-bar col-12 col-sm-12 col-md-3 col-lg-2 p-0">
+                <!-- Sneakers -->
+                <div class="pt-4">
+                    <h4 class="px-4 side-bar-title">Sneakers</h4>
 
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <img src="images/mark.svg" class="img-fluid rounded-start" alt="mark">
-                                    </div>
+                    <div class="py-2">
+                        <!-- Side Item ADIDAS -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item side-item-active">
+                                    <p class="side-item-title-2">ADIDAS</p>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body m-0 p-0">
-                                        <h5 class="card-title">Convenience</h5>
-                                        <p class="card-text">Sneaker Bids in one place
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
 
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <img src="images/gift.svg" class="img-fluid rounded-start" alt="cup">
-                                    </div>
+                        <!-- Side Item AIR JORDAN -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item">
+                                    <p class="side-item-title-2">AIR JORDAN</p>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body m-0 p-0">
-                                        <h5 class="card-title">Hassle Free</h5>
-                                        <p class="card-text">Quick, easy and reliable
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+                            </a>
                         </div>
-                    </div>
 
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card bg-transparent border-0 mb-3" style="max-width: 540px;">
-                            <div class="row g-0">
-                                <div class="col-md-4">
-                                    <div class="d-flex justify-content-center align-items-center h-100">
-                                        <img src="images/customer.svg" class="img-fluid rounded-start" alt="customer">
-                                    </div>
+                        <!-- Side Item NIKE -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item">
+                                    <p class="side-item-title-2">NIKE</p>
                                 </div>
-                                <div class="col-md-8">
-                                    <div class="card-body m-0 p-0">
-                                        <h5 class="card-title">24 / 7 Support</h5>
-                                        <p class="card-text">Easy communication
-                                        </p>
-                                    </div>
+                            </a>
+                        </div>
+
+                        <!-- Side Item YEEZY -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item">
+                                    <p class="side-item-title-2">YEEZY</p>
                                 </div>
+                            </a>
+                        </div>
+
+                        <!-- Side Item REEBOK -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item">
+                                    <p class="side-item-title-2">REEBOK</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- Side Item Other Brands -->
+                        <div class="mb-3">
+                            <a href="#">
+                                <div class="px-4 side-item">
+                                    <p class="side-item-title-2">Other Brands</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <!-- divided -->
+                        <hr class="divided mt-4">
+                    </div>
+                </div>
+
+                <!-- Size Types -->
+                <div class="pb-4">
+                    <h4 class="px-4 side-bar-title">Size Types</h4>
+
+                    <div class="py-2">
+                        <!-- Side Item Men -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="men">
+                                <label class="form-check-label" for="men">
+                                    Men
+                                </label>
                             </div>
                         </div>
+
+                        <!-- Side Item Women -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="women">
+                                <label class="form-check-label" for="women">
+                                    Women
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Side Item Child -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="child">
+                                <label class="form-check-label" for="child">
+                                    Child
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Side Item Proschool -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="proschool">
+                                <label class="form-check-label" for="proschool">
+                                    Proschool
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Side Item Infant -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="infant">
+                                <label class="form-check-label" for="infant">
+                                    Infant
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- Side Item Toddler -->
+                        <div class="mb-3">
+                            <div class="form-check px-5">
+                                <input class="form-check-input bg-transparent border-light" type="checkbox" value=""
+                                    id="toddler">
+                                <label class="form-check-label" for="toddler">
+                                    Toddler
+                                </label>
+                            </div>
+                        </div>
+
+                        <!-- divided -->
+                        <hr class="divided mt-4">
                     </div>
                 </div>
             </div>
-        </div>
 
-        <!-- Live Bids -->
-        <div class="live-bids">
-            <div class="container">
-                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
-                    <h2 class="live-bids-title">Live Bids</h2>
-
-                    <a href="#">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
-                            <div class="mb-2 ms-2">
-                                <img src="images/right-arrow.svg" alt="right-arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5">
+            <!-- Content -->
+            <div class="content col-12 col-sm-12 col-md-9 col-lg-10 py-5 px-5">
+                <!-- Cards Container -->
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-1.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
+                            </div>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-2.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
+                            </div>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-3.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
+                            </div>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- Most Popular -->
-        <div class="live-bids most-popular-bg">
-            <div class="container">
-                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
-                    <h2 class="live-bids-title text-white">Most Popular</h2>
-
-                    <a href="#">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title text-white">SHOW MORE</h4>
-                            <div class="mb-2 ms-2">
-                                <img src="images/right-arrow-white.svg" alt="right-arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-1.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">BID</button>
-                                <button type="button" class="btn btn-success">Buy Now</button>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-2.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">BID</button>
-                                <button type="button" class="btn btn-success">Buy Now</button>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-3.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">BID</button>
-                                <button type="button" class="btn btn-success">Buy Now</button>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <img src="images/shoe-4.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-0">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
                                 <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
                                     Airforce Fit bit is main stream sneaker
                                 </p>
-                                <small class="text-muted">Lowest ask</small>
-                                <h2 class="display-6">$250</h2>
                             </div>
-                            <div class="btn-group" role="group" aria-label="Basic example">
-                                <button type="button" class="btn btn-secondary">BID</button>
-                                <button type="button" class="btn btn-success">Buy Now</button>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
 
-        <!-- New Releases -->
-        <div class="live-bids">
-            <div class="container">
-                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
-                    <h2 class="live-bids-title">New Releases</h2>
-
-                    <a href="#">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
-                            <div class="mb-2 ms-2">
-                                <img src="images/right-arrow.svg" alt="right-arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <div class="underline-container bg-white px-3 pt-1">
-                                <p class="text-decoration-underline mb-0 pb-0">AUG</p>
-                                <span>16</span>
-                            </div>
-
-                            <img src="images/shoe-1.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-3">
+                        <div class="card h-100 border-0">
+                            <img src="images/browse-card-1.svg" class="card-img-top img-fluid" alt="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Airforce Fit bit</h5>
                                 <p class="card-text">
-                                    Airforce Fit bit Airforce Fit
-                                    Airforce Fit bitbit
+                                    Airforce Fit bit is main stream sneaker
                                 </p>
-                                <button class="btn black-btn text-white w-50">BID</button>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <div class="underline-container bg-white px-3 pt-1">
-                                <p class="text-decoration-underline mb-0 pb-0">AUG</p>
-                                <span>16</span>
+                            <div class="card-footer border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-price mb-0">$250</p>
+                                </div>
                             </div>
-
-                            <img src="images/shoe-2.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-3">
-                                <p class="card-text">
-                                    Airforce Fit bit Airforce Fit
-                                    Airforce Fit bitbit
-                                </p>
-                                <button class="btn black-btn text-white w-50">BID</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <div class="underline-container bg-white px-3 pt-1">
-                                <p class="text-decoration-underline mb-0 pb-0">AUG</p>
-                                <span>16</span>
-                            </div>
-
-                            <img src="images/shoe-3.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-3">
-                                <p class="card-text">
-                                    Airforce Fit bit Airforce Fit
-                                    Airforce Fit bitbit
-                                </p>
-                                <button class="btn black-btn text-white w-50">BID</button>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-light p-1">
-                            <div class="underline-container bg-white px-3 pt-1">
-                                <p class="text-decoration-underline mb-0 pb-0">AUG</p>
-                                <span>16</span>
-                            </div>
-
-                            <img src="images/shoe-4.svg" class="card-img-top" alt="shoe-1">
-                            <div class="card-body pb-3">
-                                <p class="card-text">
-                                    Airforce Fit bit Airforce Fit
-                                    Airforce Fit bitbit
-                                </p>
-                                <button class="btn black-btn text-white w-50">BID</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Popular Brands -->
-        <div class="live-bids popular-brands">
-            <div class="container">
-                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
-                    <h2 class="live-bids-title">Popular Brands</h2>
-
-                    <a href="#">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
-                            <div class="mb-2 ms-2">
-                                <img src="images/right-arrow.svg" alt="right-arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-5 g-4 pb-5">
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <div class="image-shadow">
-                                <img src="images/nike-shoe.svg" class="card-img-top" alt="nike">
-                            </div>
-                            <div class="card-body pb-3 pt-1">
-                                <h5 class="card-title text-center">NIKE</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <div class="image-shadow">
-                                <img src="images/adidas.svg" class="card-img-top" alt="adidas">
-                            </div>
-                            <div class="card-body pb-3 pt-1">
-                                <h5 class="card-title text-center">ADIDAS</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <div class="image-shadow">
-                                <img src="images/vans.svg" class="card-img-top" alt="vans">
-                            </div>
-                            <div class="card-body pb-3 pt-1">
-                                <h5 class="card-title text-center">VANS</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <div class="image-shadow">
-                                <img src="images/puma.svg" class="card-img-top" alt="puma">
-                            </div>
-                            <div class="card-body pb-3 pt-1">
-                                <h5 class="card-title text-center">PUMA</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <div class="image-shadow">
-                                <img src="images/converse.svg" class="card-img-top" alt="converse">
-                            </div>
-                            <div class="card-body pb-3 pt-1">
-                                <h5 class="card-title text-center">CONVERSE</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Live IG Feed -->
-        <div class="live-bids">
-            <div class="container">
-                <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
-                    <h2 class="live-bids-title">Live IG Feed</h2>
-
-                    <a href="#">
-                        <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
-                            <div class="mb-2 ms-2">
-                                <img src="images/right-arrow.svg" alt="right-arrow">
-                            </div>
-                        </div>
-                    </a>
-                </div>
-
-                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 pb-5">
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <img src="images/live-1.svg" class="card-img-top" alt="live">
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <img src="images/live-2.svg" class="card-img-top" alt="live">
-                        </div>
-                    </div>
-
-                    <!-- Card -->
-                    <div class="col">
-                        <div class="card h-100 bg-transparent border-0 p-1">
-                            <img src="images/live-3.svg" class="card-img-top" alt="live">
                         </div>
                     </div>
                 </div>
