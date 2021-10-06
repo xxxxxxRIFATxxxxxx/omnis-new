@@ -78,3 +78,51 @@
     background: #E5E5E5;
     color: #313131;
 }
+
+.prices-label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #E5E5E5;
+}
+
+.input-container {
+    background: #313131;
+    border: 1.5px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+input {
+    color: #E5E5E5;
+}
+
+input:focus {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.pagi-btn {
+    background: #C4C4C4 !important;
+    border-radius: 5px !important;
+    color: #313131 !important;
+    font-style: normal !important;
+    font-size: 17px !important;
+}
+
+.pagi-btn-active {
+    background: #313131 !important;
+    color: #FFFFFF !important;
+}
+
+@media only screen and (max-width: 768px) { 
+    .featured-container {
+        width: 100% !important;
+    }
+
+    .pagination {
+        display: none;
+    }
+
+}
