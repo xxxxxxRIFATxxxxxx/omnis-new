@@ -53,3 +53,25 @@
     font-size: 20px;
     color: #3A3A3A;
 }
+
+.total-border {
+    border-top: 1px solid #C4C4C4;
+}
+
+@media only screen and (max-width: 768px) {
+    .shoe-title-3 {
+        font-size: 12px;
+    }
+
+    .table-title-1 {
+        font-size: 16px;
+    }
+    
+    .table-title-2 {
+        font-size: 20px;
+    }
+    
+    .table-title-3 {
+        font-size: 16px;
+    }
+}

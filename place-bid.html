@@ -289,7 +289,7 @@
     <!-- Main -->
     <main>
         <div class="container w-100 py-5">
-            <div class="row">
+            <div class="row g-4">
                 <!-- Product Picture -->
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 bg-white">
                     <div class="px-5 py-4">
@@ -367,21 +367,33 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <td class="table-title-1">Processing Fee</td>
+                                    <td class="table-title-1 d-flex align-items-center">
+                                        <img class="img-fluid me-3" src="images/process.svg" alt="process">
+                                        <span>Processing Fee</span>
+                                    </td>
                                     <td class="table-title-3">A$9.50</td>
                                 </tr>
 
                                 <tr>
-                                    <td class="table-title-1">Shipping</td>
-                                    <td class="table-title-3">A$25.00</td>
+                                    <td class="table-title-1 d-flex align-items-center">
+                                        <img class="img-fluid me-3" src="images/truck.svg" alt="truck">
+                                        <span>Shipping</span>
+                                    </td>
+                                    <td class="table-title-3 pb-4">A$25.00</td>
                                 </tr>
 
-                                <tr>
-                                    <td class="table-title-2">Total</td>
+                                <tr class="total-border">
+                                    <td class="table-title-2">$ Total</td>
                                     <td class="table-title-2">360.50</td>
                                 </tr>
                             </tbody>
                         </table>
+
+                        <div class="mb-3 ms-2">
+                            <small class="silver-text">
+                                *Any applicable duties. GST & imposr fees are included in price
+                            </small>
+                        </div>
                     </div>
                 </div>
             </div>
