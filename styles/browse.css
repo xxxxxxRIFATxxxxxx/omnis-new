@@ -116,6 +116,8 @@ input:focus {
     color: #FFFFFF !important;
 }
 
+
+
 @media only screen and (max-width: 768px) { 
     .featured-container {
         width: 100% !important;

@@ -30,6 +30,76 @@ main {
     color: #313131;
 }
 
+.small-silver {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #898989;
+}
+
+.small-green {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    color: #3CB043;
+}
+
+.details-title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #313131;
+}
+
+.buy-btn {
+    background: #3CB043;
+    border-radius: 5px;
+}
+
+.buy-btn-title-1 {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 35px;
+    color: #FFFFFF;
+}
+
+.buy-btn-title-2 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 8px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+
+.buy-btn-title-3 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.red-bg {
+    background-color: #E55B5B;
+}
+
+.table>:not(caption)>*>* {
+    border-bottom-width: 0;
+}
+
+.table-title {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #626262;
+}
+
+.des-text {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    color: #626262;
+}
+
 @media only screen and (max-width: 768px) {
     .history-title-2 {
         margin-top: 20px;
