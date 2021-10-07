@@ -1,0 +1,55 @@
+.shoe-title-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: #898989;
+}
+
+.bid-btn {
+    background: #3CB043;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #FFFFFF;
+}
+
+.buy-btn {
+    background: #F4F4F4;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 22px;
+    color: #3A3A3A;
+}
+
+.bg-silver {
+    background: #F4F4F4 !important;
+    border-radius: 10px !important;
+}
+
+.silver-text {
+    color: #898989;
+}
+
+.table-title-1 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #3A3A3A;
+}
+
+.table-title-2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    color: #3A3A3A;
+}
+
+.table-title-3 {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    color: #3A3A3A;
+}
