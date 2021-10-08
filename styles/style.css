@@ -240,6 +240,25 @@ input[type=text]:focus:focus {
     color: #FFFFFF;
 }
 
+.two-btn {
+    border: 2px solid #3A3A3A;
+    box-sizing: border-box;
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    color: #313131;
+    width: 100%;
+}
+
+.more-radious {
+    border-radius: 10px !important;
+}
+
+.card {
+    box-shadow: none !important;
+}
+
 @media only screen and (max-width: 768px) { 
     .live-bids-title {
         font-size: 24px;
@@ -322,6 +341,87 @@ footer .form-control {
 
 .fly-btn {
     background-color: #3CB043;
+}
+
+.language-container {
+    border: 1.7702px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 8.85098px;
+}
+
+
+@media only screen and (max-width: 599px) {
+    .card-title {
+        font-size: 10px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .card-body, .card-footer  {
+        padding: 5px !important;
+    }
+
+    .card-text {
+        font-size: 6px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-title {
+        font-size: 5px !important;
+    }
+
+    .footer-price {
+        font-size: 8px !important;
+    }
+
+    .two-btn {
+        font-size: 6px !important;
+    }
+
+    .two-title {
+        font-size: 8px !important;
+    }
+
+    .two-price {
+        font-size: 8px !important;
+    }
+
+    .aug, .aug-number {
+        display: none;
+    }
+
+    .black-btn {
+        font-size: 10px !important;
+        width: 100% !important;
+        margin-top: 10px !important;
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .card-title {
+        font-size: 14px !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .card-body, .card-footer  {
+        padding: 10px !important;
+    }
+
+    .card-text {
+        font-size: 10px !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+
+    .footer-title {
+        font-size: 10px !important;
+    }
+
+    .footer-price {
+        font-size: 12px !important;
+    }
 }
 
 @media only screen and (max-width: 768px) {

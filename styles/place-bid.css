@@ -58,6 +58,32 @@
     border-top: 1px solid #C4C4C4;
 }
 
+.bid-btn-green {
+    background: #3CB043;
+    border: 0.25px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FBFBFB;
+    width: 160px;
+}
+
+.bid-btn-red {
+    background: #E55B5B;
+    border: 0.25px solid #C4C4C4;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.08);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FBFBFB;
+    width: 160px;
+}
+
 @media only screen and (max-width: 768px) {
     .shoe-title-3 {
         font-size: 12px;
@@ -73,5 +99,9 @@
     
     .table-title-3 {
         font-size: 16px;
+    }
+
+    .small-silver {
+        font-size: 10px !important;
     }
 }
