@@ -84,6 +84,10 @@
     width: 160px;
 }
 
+.green-text {
+    color: #3CB043;
+}
+
 @media only screen and (max-width: 768px) {
     .shoe-title-3 {
         font-size: 12px;
