@@ -26,6 +26,7 @@
     <!-- External CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/browse.css">
+    <link rel="stylesheet" href="styles/product-selection.css">
 </head>
 
 <body>
@@ -51,7 +52,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item me-5">
+                        <li class="nav-item me-5" data-bs-toggle="modal" data-bs-target="#locationModal">
                             <a class="nav-link" href="#">
                                 <div class="text-center">
                                     <img class="img-fluid" src="images/shoe.svg" alt="shoe">
@@ -73,7 +74,7 @@
 
                     <div class="d-flex align-items-center">
                         <ul class="navbar-nav">
-                            <li class="nav-item me-5 top-m" data-bs-toggle="modal" data-bs-target="#locationModal">
+                            <li class="nav-item me-5 top-m" data-bs-toggle="modal" data-bs-target="#sellModal">
                                 <a class="nav-link nav-btn" href="#">
                                     SELL
                                 </a>
@@ -278,6 +279,41 @@
                     <div class="modal-footer border-0">
                         <button type="button" class="btn btn-danger w-100 modal-btn"
                             data-bs-dismiss="modal">Confirm</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sell Modal -->
+        <div class="modal fade" id="sellModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content mx-0">
+                    <div class="modal-header">
+                        <div class="px-5"></div>
+
+                        <h5 class="modal-title portfolio-title mx-auto" id="exampleModalLabel">
+                            Choose a product
+                        </h5>
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+                        <div class="search-bar input-group mb-3 p-5 bg-silver">
+                            <span class="input-group-text bg-white border-0" id="basic-addon1">
+                                <img src="images/search-icon.svg" alt="search icon">
+                            </span>
+                            <input type="text" class="form-control border-0" placeholder="Search for brand, color etc"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="text-center black-modal pb-4">
+                            <img class="img-fluid mt-2" src="images/modal-dashed.svg" alt="dashed">
+
+                            <div class="mt-5 text-center px-4 pb-3">
+                                <button class="btn w-100 modal-search-btn">Search</button>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -51,7 +51,7 @@
                             </a>
                         </li>
 
-                        <li class="nav-item me-5">
+                        <li class="nav-item me-5" data-bs-toggle="modal" data-bs-target="#locationModal">
                             <a class="nav-link" href="#">
                                 <div class="text-center">
                                     <img class="img-fluid" src="images/shoe.svg" alt="shoe">
@@ -61,7 +61,7 @@
                         </li>
 
                         <li class="nav-item me-5 top-m">
-                            <a class="nav-link nav-btn-green" href="#">
+                            <a class="nav-link nav-btn-green" href="browse.html">
                                 BROWSE
                             </a>
                         </li>
@@ -73,7 +73,7 @@
 
                     <div class="d-flex align-items-center">
                         <ul class="navbar-nav">
-                            <li class="nav-item me-5 top-m" data-bs-toggle="modal" data-bs-target="#locationModal">
+                            <li class="nav-item me-5 top-m">
                                 <a class="nav-link nav-btn" href="#">
                                     SELL
                                 </a>
@@ -89,7 +89,9 @@
                                 </a>
                             </li>
 
-                            <button class="btn nav-menu-btn">
+                            <button class="btn nav-menu-btn" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                aria-controls="offcanvasRight">
+
                                 <img class="img-fluid" src="images/nav-icon.svg" alt="nav icon">
                                 <p class="nav-text">Menu</p>
                             </button>
@@ -98,6 +100,147 @@
                 </div>
             </div>
         </nav>
+
+        <!-- Navbar Offcanvas -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header pt-4">
+                <button type="button" class="ms-3 btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close">
+                </button>
+
+                <div class="text-center">
+                    <img class="img-fluid" src="images/offcanvas-logo.svg" alt="offcanvas">
+                </div>
+
+                <div></div>
+            </div>
+
+            <div class="offcanvas-body">
+                <div class="flex-shrink-0 p-3 bg-white">
+                    <ul class="list-unstyled ps-0">
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#sneakers-collapse" aria-expanded="false">
+
+                                <span>Sneakers</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="sneakers-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Overview</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Weekly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Monthly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#about-collapse" aria-expanded="false">
+
+                                <span>About</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="about-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Overview</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Weekly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Monthly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>How It Works</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>New Releases</span>
+                            </a>
+                        </li>
+
+                        <li class="mb-3">
+                            <button
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed"
+                                data-bs-toggle="collapse" data-bs-target="#popular-collapse" aria-expanded="false">
+
+                                <span>Popular Brands</span>
+                                <img class="img-fluid" src="images/offcanvas-right-arrow.svg" alt="arrow">
+                            </button>
+
+                            <div class="collapse py-3" id="popular-collapse">
+                                <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Overview</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Weekly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Monthly</a>
+                                    </li>
+
+                                    <li class="pb-3 px-1">
+                                        <a href="#" class="link-dark rounded text-decoration-none">Annually</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+
+                        <li class="mb-3">
+                            <a href="#"
+                                class="d-flex justify-content-between w-100 btn btn-toggle align-items-center rounded collapsed">
+
+                                <span>News</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="px-5 pb-3">
+                <div class="d-flex justify-content-between">
+                    <a href="#" class="w-100 btn offcanvas-outline-btn me-3">Log In</a>
+                    <a href="#" class="w-100 btn offcanvas-btn">Sign Up</a>
+                </div>
+            </div>
+        </div>
 
         <!-- Location Modal -->
         <div class="modal fade" id="locationModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
