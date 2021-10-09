@@ -88,6 +88,15 @@
     color: #3CB043;
 }
 
+.green-bg {
+    background-color: #3CB043;
+}
+
+.form-check-input:checked {
+    background-color: #3CB043;
+    border-color: #3CB043;
+}
+
 @media only screen and (max-width: 768px) {
     .shoe-title-3 {
         font-size: 12px;
