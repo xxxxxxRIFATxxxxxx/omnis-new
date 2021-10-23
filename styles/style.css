@@ -37,6 +37,10 @@ body {
     width: 96px;
 }
 
+.green-bg {
+    background: #3CB043;
+}
+
 .nav-btn-green {
     background: #3CB043;
     border-radius: 20px;
