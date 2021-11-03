@@ -43,17 +43,24 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
                                 <div class="text-center">
                                     <img class="img-fluid" src="images/nav-search-icon.svg" alt="search">
                                 </div>
                                 <p class="nav-text">Search</p>
                             </a>
+
+                            <ul class="dropdown-menu">
+                                <form>
+                                    <input type="text" class="dropdown-item form-control" placeholder="Search" />
+                                </form>
+                            </ul>
                         </li>
 
                         <li class="nav-item me-5" data-bs-toggle="modal" data-bs-target="#locationModal">
-                            <a class="nav-link" href="#">
+                            <a class="nav-link" href="watchlist.html">
                                 <div class="text-center">
                                     <img class="img-fluid" src="images/shoe.svg" alt="shoe">
                                 </div>
@@ -235,6 +242,20 @@
                 </div>
             </div>
 
+            <div class="mb-5 mx-3">
+                <div class="row text-center canvas-language-container">
+                    <div class="col-4 border-right">
+                        <button class="btn canvas-silver-text">Australia</button>
+                    </div>
+                    <div class="col-4 border-right">
+                        <button class="btn canvas-silver-text">English</button>
+                    </div>
+                    <div class="col-4">
+                        <button class="btn canvas-silver-text">AUD</button>
+                    </div>
+                </div>
+            </div>
+
             <div class="px-5 pb-3">
                 <div class="d-flex justify-content-between">
                     <a href="#" class="w-100 btn offcanvas-outline-btn me-3">Log In</a>
@@ -311,7 +332,7 @@
                             <img class="img-fluid mt-2" src="images/modal-dashed.svg" alt="dashed">
 
                             <div class="mt-5 text-center px-4 pb-3">
-                                <button class="btn w-100 modal-search-btn">Search</button>
+                                <a href="browse.html" class="btn w-100 modal-search-btn">Search</a>
                             </div>
                         </div>
                     </div>
@@ -333,13 +354,13 @@
                 </li>
             </ul>
 
-            <div class="search-bar input-group mb-3">
+            <form class="search-bar input-group mb-3">
                 <span class="input-group-text bg-white border-0" id="basic-addon1">
                     <img src="images/search-icon.svg" alt="search icon">
                 </span>
                 <input type="text" class="form-control border-0" placeholder="Search for brand, color etc"
                     aria-describedby="basic-addon1">
-            </div>
+            </form>
         </div>
 
         <!-- Carousel -->
@@ -456,7 +477,11 @@
 
                     <a href="#">
                         <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
+                            <h4 class="live-bids-sub-title">
+                                <a class="text-decoration-none text-dark" href="browse.html">
+                                    SHOW MORE
+                                </a>
+                            </h4>
                             <div class="mb-2 ms-2">
                                 <img src="images/right-arrow.svg" alt="right-arrow">
                             </div>
@@ -477,7 +502,9 @@
                             </div>
                             <div class="card-footer border-0">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-title mb-0">
+                                        <a href="#new-releases" class="text-decoration-none text-white">Lowest ask</a>
+                                    </p>
                                     <p class="footer-price mb-0">$250</p>
                                 </div>
                             </div>
@@ -496,7 +523,9 @@
                             </div>
                             <div class="card-footer border-0">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-title mb-0">
+                                        <a href="#new-releases" class="text-decoration-none text-white">Lowest ask</a>
+                                    </p>
                                     <p class="footer-price mb-0">$250</p>
                                 </div>
                             </div>
@@ -515,7 +544,9 @@
                             </div>
                             <div class="card-footer border-0">
                                 <div class="d-flex justify-content-between align-items-center">
-                                    <p class="footer-title mb-0">Lowest ask</p>
+                                    <p class="footer-title mb-0">
+                                        <a href="#new-releases" class="text-decoration-none text-white">Lowest ask</a>
+                                    </p>
                                     <p class="footer-price mb-0">$250</p>
                                 </div>
                             </div>
@@ -533,7 +564,10 @@
 
                     <a href="#">
                         <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title text-white">SHOW MORE</h4>
+                            <h4 class="live-bids-sub-title text-white">
+                                <a class="text-decoration-none text-white" href="browse.html">SHOW MORE
+                                </a>
+                            </h4>
                             <div class="mb-2 ms-2">
                                 <img src="images/right-arrow-white.svg" alt="right-arrow">
                             </div>
@@ -541,67 +575,134 @@
                     </a>
                 </div>
 
-                <div class="row row-cols-3 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 pb-5">
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-0 more-radious">
+                        <div class="card h-100 bg-light p-0 more-radious pb-0 mb-0">
                             <img src="images/shoe-1.svg" class="card-img-top" alt="shoe-1">
                             <div class="card-body pb-0 px-0 d-flex justify-content-around">
                                 <h5 class="card-title fs-5 two-title">Airforce Fit bit</h5>
                                 <h2 class="fs-5 two-price">$250</h2>
                             </div>
 
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <!-- <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn two-btn border-end-0">BID</button>
                                 <button type="button" class="btn two-btn border-start-0">Buy Now</button>
+                            </div> -->
+                            <div class="card-body pb-0 px-2 mb-0 card-body-2">
+                                <div class="row btn-border">
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">BID</button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="border-line">|</div>
+                                        <div class="border-line-2">|</div>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">Buy Now</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-0 more-radious">
+                        <div class="card h-100 bg-light p-0 more-radious pb-0 mb-0">
                             <img src="images/shoe-2.svg" class="card-img-top" alt="shoe-1">
                             <div class="card-body pb-0 px-0 d-flex justify-content-around">
                                 <h5 class="card-title fs-5 two-title">Airforce Fit bit</h5>
                                 <h2 class="fs-5 two-price">$250</h2>
                             </div>
 
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <!-- <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn two-btn border-end-0">BID</button>
                                 <button type="button" class="btn two-btn border-start-0">Buy Now</button>
+                            </div> -->
+
+                            <div class="card-body pb-0 px-2 mb-0 card-body-2">
+                                <div class="row btn-border">
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">BID</button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="border-line">|</div>
+                                        <div class="border-line-2">|</div>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">Buy Now</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-0 more-radious">
+                        <div class="card h-100 bg-light p-0 more-radious pb-0 mb-0">
                             <img src="images/shoe-3.svg" class="card-img-top" alt="shoe-1">
                             <div class="card-body pb-0 px-0 d-flex justify-content-around">
                                 <h5 class="card-title fs-5 two-title">Airforce Fit bit</h5>
                                 <h2 class="fs-5 two-price">$250</h2>
                             </div>
 
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <!-- <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn two-btn border-end-0">BID</button>
                                 <button type="button" class="btn two-btn border-start-0">Buy Now</button>
+                            </div> -->
+
+                            <div class="card-body pb-0 px-2 mb-0 card-body-2">
+                                <div class="row btn-border">
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">BID</button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="border-line">|</div>
+                                        <div class="border-line-2">|</div>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">Buy Now</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Card -->
                     <div class="col">
-                        <div class="card h-100 bg-light p-0 more-radious">
+                        <div class="card h-100 bg-light p-0 more-radious pb-0 mb-0">
                             <img src="images/shoe-4.svg" class="card-img-top" alt="shoe-1">
                             <div class="card-body pb-0 px-0 d-flex justify-content-around">
                                 <h5 class="card-title fs-5 two-title">Airforce Fit bit</h5>
                                 <h2 class="fs-5 two-price">$250</h2>
                             </div>
 
-                            <div class="btn-group" role="group" aria-label="Basic example">
+                            <!-- <div class="btn-group" role="group" aria-label="Basic example">
                                 <button type="button" class="btn two-btn border-end-0">BID</button>
                                 <button type="button" class="btn two-btn border-start-0">Buy Now</button>
+                            </div> -->
+
+                            <div class="card-body pb-0 px-2 mb-0 card-body-2">
+                                <div class="row btn-border">
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">BID</button>
+                                    </div>
+
+                                    <div class="col-2">
+                                        <div class="border-line">|</div>
+                                        <div class="border-line-2">|</div>
+                                    </div>
+
+                                    <div class="col-5">
+                                        <button type="button" class="btn small-text mt-2 fw-bold">Buy Now</button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -610,14 +711,18 @@
         </div>
 
         <!-- New Releases -->
-        <div class="live-bids">
+        <div class="live-bids" id="new-releases">
             <div class="container">
                 <div class="pt-4 pb-5 d-flex justify-content-between align-items-center">
                     <h2 class="live-bids-title">New Releases</h2>
 
                     <a href="#">
                         <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
+                            <h4 class="live-bids-sub-title">
+                                <a class="text-decoration-none text-dark" href="browse.html">
+                                    SHOW MORE
+                                </a>
+                            </h4>
                             <div class="mb-2 ms-2">
                                 <img src="images/right-arrow.svg" alt="right-arrow">
                             </div>
@@ -713,7 +818,11 @@
 
                     <a href="#">
                         <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
+                            <h4 class="live-bids-sub-title">
+                                <a class="text-decoration-none text-dark" href="browse.html">
+                                    SHOW MORE
+                                </a>
+                            </h4>
                             <div class="mb-2 ms-2">
                                 <img src="images/right-arrow.svg" alt="right-arrow">
                             </div>
@@ -793,7 +902,11 @@
 
                     <a href="#">
                         <div class="d-flex justify-content-center align-items-center">
-                            <h4 class="live-bids-sub-title">SHOW MORE</h4>
+                            <h4 class="live-bids-sub-title">
+                                <a class="text-decoration-none text-dark" href="browse.html">
+                                    SHOW MORE
+                                </a>
+                            </h4>
                             <div class="mb-2 ms-2">
                                 <img src="images/right-arrow.svg" alt="right-arrow">
                             </div>
@@ -925,16 +1038,19 @@
                         </li>
                     </ul>
 
-                    <ul class="mt-5">
-                        <div class="language-container p-3">
-                            <a href="#" class="text-white text-decoration-none fs-6">Australia</a>
-                            <span class="fs-5">|</span>
-
-                            <a href="#" class="text-white text-decoration-none fs-6">English</a>
-                            <span class="fs-5">|</span>
-                            <a href="#" class="text-white text-decoration-none fs-6">AUD</a>
+                    <div class="mt-5">
+                        <div class="row text-center footer-language-container">
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">Australia</button>
+                            </div>
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">English</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn text-white m-0 p-0">AUD</button>
+                            </div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>

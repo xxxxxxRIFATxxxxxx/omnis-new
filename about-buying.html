@@ -44,13 +44,20 @@
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#">
+                        <li class="nav-item dropdown me-5">
+                            <a class="nav-link" href="#" data-bs-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">
                                 <div class="text-center">
                                     <img class="img-fluid" src="images/nav-search-icon.svg" alt="search">
                                 </div>
                                 <p class="nav-text">Search</p>
                             </a>
+
+                            <ul class="dropdown-menu">
+                                <form>
+                                    <input type="text" class="dropdown-item form-control" placeholder="Search" />
+                                </form>
+                            </ul>
                         </li>
 
                         <li class="nav-item me-5" data-bs-toggle="modal" data-bs-target="#locationModal">
@@ -444,6 +451,7 @@
         </div>
     </main>
 
+
     <!-- Footer -->
     <footer>
         <div class="container">
@@ -542,16 +550,19 @@
                         </li>
                     </ul>
 
-                    <ul class="mt-5">
-                        <div class="language-container p-3">
-                            <a href="#" class="text-white text-decoration-none fs-6">Australia</a>
-                            <span class="fs-5">|</span>
-
-                            <a href="#" class="text-white text-decoration-none fs-6">English</a>
-                            <span class="fs-5">|</span>
-                            <a href="#" class="text-white text-decoration-none fs-6">AUD</a>
+                    <div class="mt-5">
+                        <div class="row text-center footer-language-container">
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">Australia</button>
+                            </div>
+                            <div class="col-4 footer-border-right">
+                                <button class="btn text-white m-0 p-0">English</button>
+                            </div>
+                            <div class="col-4">
+                                <button class="btn text-white m-0 p-0">AUD</button>
+                            </div>
                         </div>
-                    </ul>
+                    </div>
                 </div>
             </div>
         </div>
