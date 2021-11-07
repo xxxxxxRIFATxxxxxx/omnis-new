@@ -3,6 +3,10 @@ body {
     font-family: Roboto;
 }
 
+.blur-img {
+    filter: blur(2px);
+}
+
 .canvas-language-container {
     background-color: #313131;
     border: 2.15873px solid #898989;
