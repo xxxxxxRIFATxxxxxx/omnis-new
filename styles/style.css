@@ -3,6 +3,10 @@ body {
     font-family: Roboto;
 }
 
+.blur-img {
+    filter: blur(2px);
+}
+
 .canvas-language-container {
     background-color: #313131;
     border: 2.15873px solid #898989;
@@ -31,7 +35,7 @@ body {
 
 .card-body-2 {
     position: relative;
-    top: 5px;
+    top: 1px;
 }
 
 
@@ -296,7 +300,7 @@ input[type=text]:focus:focus {
 }
 
 .two-btn {
-    border: 2px solid #3A3A3A;
+    border: 1px solid #3A3A3A;
     box-sizing: border-box;
     border-radius: 10px;
     font-style: normal;
@@ -304,6 +308,7 @@ input[type=text]:focus:focus {
     font-size: 22px;
     color: #313131;
     width: 100%;
+    outline: 2px solid #3A3A3A;
 }
 
 .more-radious {

@@ -44,6 +44,10 @@
     width: 90px;
 }
 
+.visa-card {
+    width: 60px;
+}
+
 @media only screen and (max-width: 768px) {
     .title {
         font-size: 20px;
