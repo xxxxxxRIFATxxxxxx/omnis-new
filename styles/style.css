@@ -3,6 +3,11 @@ body {
     font-family: Roboto;
 }
 
+.nav-logo {
+    position: relative;
+    left: 80px;
+}
+
 .blur-img {
     filter: blur(2px);
 }
